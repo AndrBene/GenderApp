@@ -70,7 +70,7 @@ def faceRecognitionPipeline(filename, path=True):
     
         cv2.rectangle(img,(x,y),(x+w,y+h),color,2)
         cv2.rectangle(img,(x,y-40),(x+w,y),color,-1)
-        cv2.putText(img,text,(x,y),cv2.FONT_HERSHEY_PLAIN,3,(255,255,255),5)
+        cv2.putText(img,text,(x,y),cv2.FONT_HERSHEY_PLAIN,1,(255,255,255),2)
     
         output = {
             'roi': roi,
